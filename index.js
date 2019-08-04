@@ -71,7 +71,7 @@ function keyConvert (convert, ignore, obj) {
 
     for (const key of Object.keys(obj)) {
         const converted = convert(key);
-        result[converted] = keyConvert(convert, ignore, obj[key]);
+        result[converted] = obj[key];
     }
 
     return result;
